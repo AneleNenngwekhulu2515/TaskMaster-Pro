@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to bottom, #4d3664, #c7004c);
+    min-height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+}
+
+/* Header Part home page */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(8, 0, 11, 0.5);
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 3.2em;
+    color: white;
+    margin-bottom: 30px;
+}
+
+header p {
+    font-size: 1.2em;
+    font-style: italic;
+    color: black;
+}
+
+/* Loging in and registering */
+.auth-section {
+    background-color: #c98cca;
+    padding: 15px;
+    border-radius: 20px;
+    border-style: dotted;
+    width: 400px;
+    text-align: center;
+    margin-top: 3cqmax;
+    margin-bottom: 150px; 
+}
+
+.auth-section h2 {
+    margin-bottom: 20px;
+    color: black;
+    text-decoration: underline;
+}
+
+.auth-section label {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+    color: black;
+    text-decoration: underline;
+}
+
+.auth-section input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #690606;
+}
+
+.auth-section button {
+    width: 100%;
+    padding: 10px;
+    background-color: #6d0be4;
+    color: black;
+    font-size: 1.2em;
+    border: #690606;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.auth-section button:hover {
+    background-color: #45a049;
+}
+
+.auth-section p {
+    margin-top: 15px;
+    text-align: center;
+    color: black;
+}
+
+.auth-section a {
+    color: black;
+    text-decoration: none;
+}
+
+.auth-section a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+/* To do list part second */
+
+.To-Do-list-header {
+    font-size: 30px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    height: 190px;
+    border: 5px solid black;
+    border-radius: 10px;
+    width: 320px;
+    text-align: center;
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+
+.To-Do-body {
+    display: grid;
+    place-items: center;
+    height: 10vh;
+}
+
+.container {
+    margin-top: 190px;
+    width: 350px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 100px rgba(0, 0, 0, 0.1);
+}
+
+.container img {
+    margin-left: 3px;
+    width: 100px;
+    height: auto;
+}
+
+.task-input {
+    display: flex;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+.task-input input {
+    flex: 2;
+    padding: 5px;
+    font-size: 15px;
+    border: 5px solid #4d3664;
+    border-radius: 10px;
+    outline: 5cm;
+}
+
+.task-input button {
+    padding: 10px 20px;
+    background-color: #341354;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.task-input button:hover {
+    background-color: #591831;
+}
+
+.task-list {
+    list-style-type: disc;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.task-list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #6c649a;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.task-list li:hover {
+    background-color: #5f5d5c;
+}
+
+.task-list .delete-btn {
+    background-color: transparent;
+    border: none;
+    color: #701f3e;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.task-list .delete-btn:hover {
+    color: #362449;
+}
+
+.task-list .completed {
+    text-decoration: line-through;
+    color: #480544;
+}
+
+button:disabled {
+    background-color: #2e194f;
+    cursor: not-allowed;
+}

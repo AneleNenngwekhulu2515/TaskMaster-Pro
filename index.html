@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Register</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <header>
+        <h1>Welcome to the To-Do list</h1>
+        <p>Please log in or register to get started.</p>
+    </header>
+
+    <div class="container">
+        <!-- Login Section -->
+        <div id="loginSection" class="auth-section">
+            <h2>Login</h2>
+            <form id="loginForm">
+                <label for="loginUsername">Username:</label>
+                <input type="text" id="loginUsername" required>
+
+                <label for="loginPassword">Password:</label>
+                <input type="password" id="loginPassword" required>
+
+                <button type="submit" id="loginBtn">Login</button>
+            </form>
+            <p>Don't have an account? <a href="#" onclick="showRegister()">Register</a></p>
+        </div>
+
+        <!-- Register Section -->
+        <div id="registerSection" class="auth-section" style="display:none;">
+            <h2>Register</h2>
+            <form id="registerForm">
+                <label for="registerUsername">Username:</label>
+                <input type="text" id="registerUsername" required>
+
+                <label for="registerPassword">Password:</label>
+                <input type="password" id="registerPassword" required>
+
+                <label for="displayName">Display Name:</label>
+                <input type="text" id="displayName" required>
+
+                <button type="submit" id="registerBtn">Register</button>
+            </form>
+            <p>Already have an account? <a href="#" onclick="showLogin()">Login</a></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
